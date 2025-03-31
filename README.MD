@@ -1,13 +1,17 @@
 # USAGE
 
+  ### Run docker compose file
  ```bash
-	sudo -u postgres psql -d school
+	docker-compose up --build
  ```
- ## Change to DB
- ```psql
-	\c school
+
+  ### Enter container DB via terminal
+  ```bash
+	export PGPASSWORD='password' && psql -U sql_user -h localhost -p 5432 -d sql_user
  ```
- ## Run SQL script
+
+ ### Run SQL script
  ```psql
 	\i init.sql
  ```
+

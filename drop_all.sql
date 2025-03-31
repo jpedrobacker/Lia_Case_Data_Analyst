@@ -1,0 +1,11 @@
+DROP TABLE schools;
+DROP TABLE courses;
+DROP TABLE students;
+DROP TABLE vencimento;
+DROP TABLE empregado;
+DROP TABLE emp_venc;
+DROP TABLE emp_desc;
+DROP TABLE divisao;
+DROP TABLE desconto;
+DROP TABLE dependente;
+DROP TABLE departamento;

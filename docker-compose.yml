@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: sql_user
+    restart: always
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./create_roles.sql:/docker-entrypoint-initdb.d/create_roles.sql
+      - ./base_dados_questao1.sql:/docker-entrypoint-initdb.d/base_dados_questao1.sql
+      - ./base_dados_questao2.sql:/docker-entrypoint-initdb.d/base_dados_questao2.sql
+    env_file:
+      - .env
+
+volumes:
+  db_data:

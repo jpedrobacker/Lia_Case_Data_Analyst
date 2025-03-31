@@ -27,6 +27,7 @@ INSERT INTO courses (name, price, school_id) VALUES
 ('Front-end', 800, 3),
 ('Back-end', 1000, 4),
 ('Cybersecurity', 1100, 1),
+('Data Engineer', 1500, 4),
 ('Cloud Computing', 1300, 2),
 ('AI Fundamentals', 1400, 1),
 ('DevOps', 900, 2);
@@ -37,7 +38,7 @@ INSERT INTO students (name, enrolled_at, course_id) VALUES
 ('Carlos', '2025/03/02', 4),
 ('Ana', '2025/03/02', 3),
 ('Pedro', '2025/03/03', 2),
-('Clara', '2025/03/03', 5),
+('Clara', '2025/03/03', 7),
 ('Lucas', '2025/03/04', 6),
 ('Fernanda', '2025/03/04', 7),
 ('Rafael', '2025/03/05', 8),
