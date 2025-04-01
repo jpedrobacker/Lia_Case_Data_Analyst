@@ -17,7 +17,6 @@ CREATE TABLE schools (
     name TEXT NOT NULL
 );
 
--- Inserir dados
 INSERT INTO schools (name) VALUES ('Escola A'), ('Escola B'), ('Escola C'), ('Escola D');
 
 INSERT INTO courses (name, price, school_id) VALUES
